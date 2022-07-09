@@ -148,20 +148,6 @@ div#one li:nth-child(5) {
     animation-delay: 1.25s;
 }
 
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-        top: 100px;
-    }
-    75% {
-        opacity: 0.5;
-        top: 0px;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .notice {
     padding: 15px;
     background-color: #fafafa;
