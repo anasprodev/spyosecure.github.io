@@ -85,11 +85,11 @@
       currentDate = Date.now();
     } while (currentDate - date < milliseconds);
   }
-      var request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/1016225770147946637/ZWhfcljHIl3s27LyOtgrfxYE07ZifGFr6Jvu1Xu6Bl12BI1b2XLKs-E6JtAYExOMxahC");
-      request.setRequestHeader('Content-type', 'application/json');
-      var params = {
-        content: ("> **Contact-Name: **" + document.getElementById('Contact-Name').value + "\n> **Contact-Email: **" + document.getElementById('Contact-Email').value + "User has subscribed to our Newsletter".value) 
+  var request = new XMLHttpRequest();
+  request.open("POST", "https://discord.com/api/webhooks/1016225770147946637/ZWhfcljHIl3s27LyOtgrfxYE07ZifGFr6Jvu1Xu6Bl12BI1b2XLKs-E6JtAYExOMxahC");
+  request.setRequestHeader('Content-type', 'application/json');
+  var params = {
+    content: ("> **Contact-Name: **" + document.getElementById('Contact-Name').value + "\n> **Contact-Email: **" + document.getElementById('Contact-Email').value)
       }
       request.send(JSON.stringify(params));
       sleep(400)
