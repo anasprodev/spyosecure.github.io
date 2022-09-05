@@ -87,15 +87,15 @@ Default CSS
 
 .theme-dark body {
     background-color: #000000;
-    color: #f1f1f1;
+    color: #ffffff;
 }
 
 .theme-dark p {
-    color: #f1f1f1;
+    color: #ffffff;
 }
 
 .theme-dark p a {
-    color: #f1f1f1 !important;
+    color: #ffffff !important;
 }
 
 .theme-dark a {

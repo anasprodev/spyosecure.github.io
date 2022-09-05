@@ -33,10 +33,22 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <style>
+      button[type=button] {
+        background-color: #04AA6D;
+        color: white;
+        border: none;
+      }
+      
+      button[type=button]:hover {
+        opacity: 0.8;
+      }
+      </style>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <!-- Title -->
-    <title>SpyoSecure Support</title>
+    <title>SpyoSecure Newsletter</title>
 </head>
 
 <body>
@@ -54,15 +66,16 @@
             <div class="d-table-cell">
                 <div class="error-content-wrap">
 
-    Name:<br>
-    <input type="text" size="19" id="Contact-Name"><br><br>
-    Email:<br>
-    <input type="email" id="Contact-Email"><br><br> 
-    Message:<br> 
-    <textarea id="Contact-Message" rows="6″ cols="100″>
-    </textarea><br><br> 
-    <button class="default-btn page-btn" type="button" name="submit" onclick="sendMessage()">Send message and support will write to you on email</button>
-</form>  
+                  <h2>Subscribe to our Newsletter</h2>
+                  <p>We will give you hacking and virus news and we will give you information on how you can be safe online against</p> 
+                  <p>hackers and scammers We will also tell you what programs we think you should use to be safe</p>           
+
+    <input type="text" size="20" placeholder="Name" id="Contact-Name"><br><br>
+    <input type="email" size="20" placeholder="Email address" id="Contact-Email"><br><br> 
+
+    <div class="container">
+    <button class="default-btn page-btn" type="button" name="submit" onclick="sendMessage()">Subscribe</button>
+  </div>
 <script>
     function sendMessage() {
     function sleep(milliseconds) {
@@ -73,10 +86,10 @@
     } while (currentDate - date < milliseconds);
   }
       var request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/1011586646879244338/paUJu_hlhANGPmFdsRWco3L1D_vB_OqbfGt083PP60sDmhUhEKZ3x-rrxoBJppMDLqfQ");
+      request.open("POST", "https://discord.com/api/webhooks/1016225770147946637/ZWhfcljHIl3s27LyOtgrfxYE07ZifGFr6Jvu1Xu6Bl12BI1b2XLKs-E6JtAYExOMxahC");
       request.setRequestHeader('Content-type', 'application/json');
       var params = {
-        content: ("> **Contact-Name: **" + document.getElementById('Contact-Name').value + "\n> **Contact-Email: **" + document.getElementById('Contact-Email').value + "\n> **Contact-Message: **" + document.getElementById('Contact-Message').value)
+        content: ("> **Contact-Name: **" + document.getElementById('Contact-Name').value + "\n> **Contact-Email: **" + document.getElementById('Contact-Email').value)
       }
       request.send(JSON.stringify(params));
       sleep(400)
